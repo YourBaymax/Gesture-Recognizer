@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.5
 # -*- coding: utf-8 -*-
 """
-
+模型训练，基于win10＋python3.5
 """
 
 from keras.models import Sequential
