@@ -1,9 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr  6 01:01:43 2017
 
-@author: abhisheksingh
 """
 
 from keras.models import Sequential
