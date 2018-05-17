@@ -63,7 +63,7 @@ path1 = "./gestures"  # path of folder of images
 ## Path2 is the folder which is fed in to training model
 path2 = './imgfolder_b'
 
-WeightFileName = ["ori_4015imgs_weights.hdf5", "bw_4015imgs_weights.hdf5", "bw_2510imgs_weights.hdf5",
+WeightFileName = ["ori_4015imgs_weights.hdf5", "good.hdf5", "good2.hdf5",
                   "./bw_weight.hdf5", "./final_c_weights.hdf5", "./semiVgg_1_weights.hdf5", "/new_wt_dropout20.hdf5",
                   "./weights-CNN-gesture_skinmask.hdf5"]
 
@@ -212,7 +212,7 @@ def guessGesture(model, img):
     # Get the output with maximum probability
     import operator
 
-    guess = max(d.iteritems(), key=operator.itemgetter(1))[0]
+    guess = max(d.items(), key=operator.itemgetter(1))[0]
     prob = d[guess]
 
     if prob > 70.0:

@@ -9,7 +9,7 @@ import numpy as np
 import os
 import time
 
-import CNNModel as myNN
+import gestureCNN as myNN
 
 minValue = 70
 
@@ -169,7 +169,7 @@ def Main():
             break
         elif ans == 1:
             print("Will load default weight file")
-            mod = myNN.loadCNN(0)
+            mod = myNN.loadCNN(1)
             break
         elif ans == 3:
             if not mod:
